@@ -12,13 +12,12 @@ describe("HelloWorld.vue", () => {
   });
 });
 
-describe('testComponent.vue', () => {
-  it('should be pass when you render slots', () => {
-    const title = '<span>Title</span>'
+describe("testComponent.vue", () => {
+  it("should be pass when you render slots", () => {
+    const title = "<span>Title</span>";
     const wrapper = shallowMount(testComponent, {
       slots: { title }
-    })
-    expect(wrapper.html()).toMatch(title)
-  })
-})
-
+    });
+    expect(wrapper.html()).toMatch(title);
+  });
+});
